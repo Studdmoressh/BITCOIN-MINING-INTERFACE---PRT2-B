@@ -7,7 +7,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/gsap.min.js"></script>
     <style>
-        :root {
+        : root {
             --gold: #FFD700;
             --dark-gold: #C5A000;
             --red: #D10000;
@@ -61,11 +61,11 @@
             position: relative;
         }
         
-        .nav-links a:hover {
+        .nav-links a: hover {
             color: var(--gold);
         }
         
-        .nav-links a:after {
+        .nav-links a: after {
             content: '';
             position: absolute;
             width: 0;
@@ -76,7 +76,7 @@
             transition: width 0.3s;
         }
         
-        .nav-links a:hover:after {
+        .nav-links a:hover: after {
             width: 100%;
         }
         
@@ -339,7 +339,7 @@
             transition: all 0.3s;
         }
         
-        .withdrawal-form button:hover {
+        .withdrawal-form button: hover {
             background: var(--dark-red);
         }
         
@@ -410,7 +410,7 @@
             transition: all 0.3s;
         }
         
-        .footer-links a:hover {
+        .footer-links a: hover {
             color: var(--gold);
         }
         
@@ -494,7 +494,7 @@
     
     <section class="hero">
         <h1>MINE BITCOIN WITH EASE</h1>
-        <p>Our advanced cloud mining platform lets you earn Bitcoin effortlessly. Start mining today and watch your wealth grow in real-time with our state-of-the-art 3D mining technology.</p>
+        <p>Our advanced cloud mining platform lets you earn Bitcoin effortlessly. Start mining today and watch your wealth grow in real time with our state-of-the-art 3D mining technology.</p>
         <button class="cta-button">START MINING NOW</button>
     </section>
     
@@ -667,7 +667,7 @@
             const baseMaterial = new THREE.MeshPhongMaterial({ 
                 color: 0x333333,
                 specular: 0x111111,
-                shininess: 30
+                Shininess: 30
             });
             const base = new THREE.Mesh(baseGeometry, baseMaterial);
             rig.add(base);
@@ -676,7 +676,7 @@
             const gpuMaterial = new THREE.MeshPhongMaterial({ 
                 color: 0x1a1a1a,
                 specular: 0x666666,
-                shininess: 50
+                Shininess: 50
             });
             
             for (let i = 0; i < 6; i++) {
@@ -692,7 +692,7 @@
                     color: 0xFFD700,
                     emissive: 0x333300,
                     specular: 0xFFFF00,
-                    shininess: 100
+                    Shininess: 100
                 });
                 const goldDetail = new THREE.Mesh(goldDetailGeometry, goldDetailMaterial);
                 goldDetail.position.y = 0.2;
@@ -716,7 +716,7 @@
             const fanMaterial = new THREE.MeshPhongMaterial({ 
                 color: 0x222222,
                 specular: 0x555555,
-                shininess: 30
+                Shininess: 30
             });
             
             for (let i = 0; i < 2; i++) {
@@ -733,7 +733,7 @@
                 const bladeMaterial = new THREE.MeshPhongMaterial({ 
                     color: 0x444444,
                     specular: 0x999999,
-                    shininess: 50
+                    Shininess: 50
                 });
                 
                 for (let j = 0; j < 5; j++) {
